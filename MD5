@@ -1,6 +1,6 @@
-c0c3610fb6b777daef4672889d4f7edb *DESCRIPTION
+208359f6ea10a85534c502ff03daf9a7 *DESCRIPTION
 8f6a96e6e82b245ab39ceaabf4014e26 *NAMESPACE
-5bb2bf4f02b6431bea5a12bc92e7bf80 *R/demoKde.R
-8e33447d3f73bd68e49119df3ec8e7db *man/demoKde-package.Rd
-cf2d11ae8867372e6794214f8a5781df *man/kde.Rd
-c8dd42e8ef1e3d1f493ff5452d96865c *man/kernelBiweight.Rd
+4d7e583cbb8476de605318d56d9f0d2b *R/demoKde.R
+5486b0ab24fb99233e6f657ad8ec474a *man/demoKde-package.Rd
+1691cd9780fbe902472cc300705ea875 *man/kde.Rd
+adfe00142b578027ead37c09e68ba8ef *man/kernelBiweight.Rd

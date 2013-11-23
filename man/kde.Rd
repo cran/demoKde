@@ -4,13 +4,16 @@
   Univariate kernel density estimation directly in R code.
 }
 \description{
-  This funciton behaves similarly to the \code{density} function of the
+  This function behaves similarly to the \code{density} function of the
   \pkg{stats} package, but uses only R code.  It is a demonstration
   function intended to show how kernel density estimates are
-  computed, at least conceptually.  For 
+  computed, at least conceptually.  Unlike \code{density}, the kernel
+  may be supplied as an R function in a standard form.  Example kernel
+  functions are provided.  For computational efficiency, the
+  \code{density} function of the \pkg{stats} package is far superior.
 }
 \usage{
-kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4048,
+kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4096,
     from = min(x) - 3 * sd, to = max(x) + 3 * sd,
     adjust = 1, ...)
 }
@@ -38,11 +41,11 @@ kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4048,
     Upper boundary for the computed KDE.
   }
   \item{adjust}{
-    Adjustment factor to be used for the bandwidth.  
+    Adjustment factor to be used for the bandwidth.
   }
   \item{\dots}{
-    Additional arguments, if any, to be supplied to the bandwidth
-    computation function, (if supplied).
+    Additional arguments, if needed, to be supplied to the kernel
+    function.
   }
 }
 \details{
@@ -80,7 +83,7 @@ if(require("graphics")) {
       legend("topleft", c("density histogram",
         "KDE gaussian (denstiy)", "KDE gaussian (kde)",
         "KDE rectangular (kde)"), lty = "solid", lwd=c(1,8,1,1),
-        col=c("grey", "skyblue", "black", "red"), bty="n")                 
+        col=c("grey", "skyblue", "black", "red"), bty="n")
   })
 }
 }

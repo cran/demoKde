@@ -1,4 +1,4 @@
-kde <- function(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4048,
+kde <- function(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4096,
                 from = min(x) - 3*sd, to = max(x) + 3*sd, adjust = 1,
                 ...) {
   if(has.na <- any(is.na(x))) {
@@ -6,9 +6,9 @@ kde <- function(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4048,
     if(length(x) == 0)
         stop("no finite or non-missing data!")
   }
-  sd <- (if(is.numeric(bw)) bw[1] else bw(x, ...)) * adjust
+  sd <- (if(is.numeric(bw)) bw[1] else bw(x)) * adjust
   X <- seq(from, to, len = n)
-  M <- outer(X, x, kernel, sd = sd)
+  M <- outer(X, x, kernel, sd = sd, ...)
   structure(list(x = X, y = rowMeans(M), bw = sd,
                  call = match.call(), n = length(x),
                  data.name = deparse(substitute(x)),
