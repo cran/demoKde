@@ -17,8 +17,8 @@
 \tabular{ll}{
 Package: \tab demoKde\cr
 Type: \tab Package\cr
-Version: \tab 0.9-3\cr
-Date: \tab 2013-11-23\cr
+Version: \tab 0.9-4\cr
+Date: \tab 2017-02-02\cr
 License: \tab GPL-2\cr
 }
 
