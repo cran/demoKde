@@ -13,9 +13,9 @@
   \code{density} function of the \pkg{stats} package is far superior.
 }
 \usage{
-kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4096,
-    from = min(x) - 3 * sd, to = max(x) + 3 * sd,
-    adjust = 1, ...)
+kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 512,
+    from = min(x) - cut * sd, to = max(x) + cut * sd,
+    adjust = 1, cut = 3, ...)
 }
 \arguments{
   \item{x}{
@@ -42,6 +42,10 @@ kde(x, bw = bw.nrd0, kernel = kernelGaussian, n = 4096,
   }
   \item{adjust}{
     Adjustment factor to be used for the bandwidth.
+  }
+  \item{cut}{
+    Number of bandwidths by which to extend the range of
+    the data for the range of the KDE
   }
   \item{\dots}{
     Additional arguments, if needed, to be supplied to the kernel

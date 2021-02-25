@@ -7,11 +7,15 @@
 }
 \description{
   Teaching demonstration code for kernel density estimates.  KDEs are
-  computed in native R code directly from the definition.  Kernels may
+  computed in native R code directly from the definition.  The
+  slight innovation here is to replace the observations by their
+  frequencies in a fine partition of the range of the sample.
+  Kernels may
   be supplied as a function in a standard form, thus allowing
   alternative kernel functions to be devised and empirically
   investigated.  A wide selection of kernel function is also provided
-  with the package.
+  with the package.  The canonical reference is B. W. Silverman,
+  (1998).  See Refrences.
 }
 \details{
 \tabular{ll}{
@@ -29,8 +33,10 @@ Bill Venables
 Maintainer: Bill Venables, <Bill.Venables@gmail.com>
 }
 \references{
-  See \url{http://en.wikipedia.org/wiki/Kernel_(statistics)} for details
-  of the kernel functions.
+  See \url{https://en.wikipedia.org/wiki/Kernel_(statistics)} for details
+  of the kernel functions.  See also
+  B. W. Silverman, (1998) Density Estimation for Statistics and Data
+  Analysis. Taylor & Franis Group, Boca Raton. \doi{10.1201/9781315140919}.  
 }
 \keyword{ package }
 \seealso{

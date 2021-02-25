@@ -51,7 +51,7 @@ kernelUniform(x, mean = 0, sd = 1)
   \code{kernelLogistic}, which have unbounded support.
 
   The functions provided cover all those listed in
-  \url{http://en.wikipedia.org/wiki/Kernel_(statistics)}, with obvious
+  \url{https://en.wikipedia.org/wiki/Kernel_(statistics)}, with obvious
   name correspondences.  Of the additional ones, \code{kernelSquaredCosine}
   appears to be thus far new, and \code{kernelOptCosine} is explained in
   the help file for \code{stats::density}.
@@ -65,7 +65,7 @@ kernelUniform(x, mean = 0, sd = 1)
   The evaluated kernel for each supplied \code{x} value.
 }
 \references{
-  See \href{http://en.wikipedia.org/wiki/Kernel_(statistics)}{this web
+  See \href{https://en.wikipedia.org/wiki/Kernel_(statistics)}{this web
     site}, primarily.
 }
 \author{
