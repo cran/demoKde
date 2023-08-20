@@ -17,16 +17,17 @@
   with the package.  The canonical reference is B. W. Silverman,
   (1998).  See Refrences.
 }
-\details{
-\tabular{ll}{
-Package: \tab demoKde\cr
-Type: \tab Package\cr
-Version: \tab 0.9-4\cr
-Date: \tab 2017-02-02\cr
-License: \tab GPL-2\cr
-}
+%% \details{
+%% \tabular{ll}{
+%% Package: \tab demoKde\cr
+%% Type: \tab Package\cr
+%% Version: \tab 0.9-4\cr
+%% Date: \tab 2017-02-02\cr
+%% License: \tab GPL-2\cr
+%% }
 
-}
+%% }
+
 \author{
 Bill Venables
 
